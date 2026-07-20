@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>اللائحة الرسمية لقوانين العصابات — Silent City</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e1012;
+    --bg-alt:#17191c;
+    --card:#1b1d20;
+    --ink:#ece7dd;
+    --ink-dim:#948d82;
+    --gold:#b8905a;
+    --gold-dim:#8a6a3f;
+    --red:#b3272c;
+    --red-dim:#7a1c1f;
+    --amber:#c98a2c;
+    --line:#2b2d30;
+    --serial: 'Tajawal', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(circle at 15% 0%, rgba(184,144,90,0.06), transparent 40%),
+      radial-gradient(circle at 90% 30%, rgba(179,39,44,0.06), transparent 45%),
+      var(--bg);
+    color:var(--ink);
+    font-family:'Tajawal', sans-serif;
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold); color:#0e1012;}
+
+  /* ---------- SEAL ---------- */
+  .seal{
+    width:120px;height:120px;border-radius:50%;
+    border:2px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+    flex-shrink:0;
+  }
+  .seal::before{
+    content:"";
+    position:absolute; inset:8px;
+    border:1px dashed var(--gold-dim);
+    border-radius:50%;
+  }
+  .seal-text{
+    font-family:'Almarai', sans-serif;
+    font-weight:800;
+    color:var(--gold);
+    text-align:center;
+    line-height:1.2;
+  }
+  .seal-text small{display:block; font-size:.6rem; letter-spacing:.15em; color:var(--ink-dim); font-weight:400; margin-top:2px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:relative;
+    padding:70px 6vw 60px;
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  header .watermark{
+    position:absolute; top:-60px; left:-60px;
+    width:420px; height:420px;
+    border:1px solid rgba(184,144,90,0.08);
+    border-radius:50%;
+    pointer-events:none;
+  }
+  header .watermark::after{
+    content:"";
+    position:absolute; inset:40px;
+    border:1px solid rgba(184,144,90,0.06);
+    border-radius:50%;
+  }
+  .header-inner{
+    display:flex; align-items:center; gap:28px;
+    max-width:1000px;
+    position:relative; z-index:2;
+    flex-wrap:wrap;
+  }
+  .header-copy .eyebrow{
+    font-size:.78rem; letter-spacing:.12em; color:var(--gold);
+    font-weight:700; margin-bottom:10px;
+  }
+  .header-copy h1{
+    font-family:'Almarai', sans-serif;
+    font-weight:800;
+    font-size:clamp(1.8rem, 4vw, 2.7rem);
+    color:var(--ink);
+    margin-bottom:10px;
+  }
+  .header-copy p{
+    color:var(--ink-dim);
+    font-size:1rem;
+    max-width:560px;
+  }
+  .bism{
+    margin-top:24px;
+    font-family:'Almarai', sans-serif;
+    color:var(--ink-dim);
+    font-size:.95rem;
+    border-top:1px solid var(--line);
+    padding-top:18px;
+    max-width:1000px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(14,16,18,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+    display:flex; gap:2px;
+    overflow-x:auto;
+    padding:0 6vw;
+  }
+  nav a{
+    white-space:nowrap;
+    color:var(--ink-dim);
+    text-decoration:none;
+    font-size:.85rem;
+    font-weight:500;
+    padding:16px 14px;
+    border-bottom:2px solid transparent;
+    transition:.2s;
+  }
+  nav a:hover{color:var(--gold); border-bottom-color:var(--gold-dim);}
+
+  /* ---------- MAIN ---------- */
+  main{ max-width:1000px; margin:0 auto; padding:60px 6vw 100px; }
+
+  .section{ margin-bottom:64px; scroll-margin-top:70px; }
+  .section-head{
+    display:flex; align-items:baseline; gap:14px;
+    margin-bottom:26px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:16px;
+  }
+  .section-head .tag{
+    font-family:'Almarai', sans-serif;
+    font-weight:800; font-size:.78rem;
+    color:#0e1012;
+    background:var(--gold);
+    padding:5px 12px;
+    border-radius:3px;
+    letter-spacing:.05em;
+  }
+  .section-head h2{
+    font-family:'Almarai', sans-serif;
+    font-weight:700;
+    font-size:1.4rem;
+    color:var(--ink);
+  }
+  .section-note{
+    color:var(--ink-dim);
+    font-size:.9rem;
+    margin-bottom:20px;
+  }
+
+  .rule-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:22px 24px;
+    margin-bottom:14px;
+    border-inline-start:3px solid var(--gold-dim);
+    position:relative;
+  }
+  .rule-card.danger{ border-inline-start-color:var(--red); }
+  .rule-card.warn{ border-inline-start-color:var(--amber); }
+
+  .rule-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:14px; margin-bottom:6px; }
+  .rule-num{
+    font-family:'Almarai', sans-serif;
+    color:var(--ink-dim);
+    font-size:.8rem;
+    font-weight:700;
+    min-width:26px;
+  }
+  .rule-text{ color:var(--ink); font-size:.98rem; flex:1; }
+  .rule-text b, .rule-text strong{ color:var(--gold); }
+
+  .chip{
+    font-size:.72rem; font-weight:700;
+    padding:4px 10px; border-radius:20px;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .chip.ban{ background:rgba(179,39,44,.15); color:#e2696d; border:1px solid rgba(179,39,44,.4);}
+  .chip.warn{ background:rgba(201,138,44,.15); color:#e0ab5c; border:1px solid rgba(201,138,44,.4);}
+  .chip.gold{ background:rgba(184,144,90,.15); color:var(--gold); border:1px solid rgba(184,144,90,.4);}
+
+  .plain-list{ list-style:none; }
+  .plain-list li{
+    display:flex; gap:12px; align-items:flex-start;
+    padding:10px 0;
+    border-bottom:1px dashed var(--line);
+    color:var(--ink); font-size:.95rem;
+  }
+  .plain-list li:last-child{ border-bottom:none; }
+  .plain-list li::before{
+    content:"—";
+    color:var(--gold-dim);
+    flex-shrink:0;
+  }
+
+  .subrules{ margin-top:14px; padding-inline-start:16px; }
+  .subrules div{
+    display:flex; gap:10px; color:var(--ink-dim);
+    font-size:.9rem; padding:6px 0;
+  }
+
+  /* ---------- ALERT BANNER (urgent notices) ---------- */
+  .alert{
+    background:linear-gradient(135deg, rgba(179,39,44,.14), rgba(179,39,44,.04));
+    border:1px solid var(--red-dim);
+    border-radius:10px;
+    padding:26px 28px;
+    margin-bottom:20px;
+    position:relative;
+    overflow:hidden;
+  }
+  .alert::before{
+    content:"⚠";
+    position:absolute; left:-10px; top:-20px;
+    font-size:6rem; color:rgba(179,39,44,.08);
+  }
+  .alert h3{
+    font-family:'Almarai', sans-serif;
+    color:#e2696d; font-weight:800; font-size:1.05rem;
+    margin-bottom:12px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .alert p{ color:var(--ink); font-size:.95rem; margin-bottom:8px; }
+  .alert ul{ list-style:none; margin-top:10px; }
+  .alert ul li{
+    padding:8px 0; border-bottom:1px dashed rgba(179,39,44,.25);
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:.92rem; color:var(--ink);
+  }
+  .alert ul li:last-child{border-bottom:none;}
+  .alert ul li .chip{ margin-inline-start:10px; }
+
+  /* ---------- FINAL BAND SECTION ---------- */
+  .final-band{
+    background:repeating-linear-gradient(-45deg, rgba(179,39,44,.08) 0 14px, rgba(179,39,44,.02) 14px 28px);
+    border:1px solid var(--red-dim);
+    border-radius:10px;
+    padding:34px 28px;
+  }
+  .final-band h2{
+    font-family:'Almarai', sans-serif;
+    font-weight:800; color:#e2696d;
+    font-size:1.3rem; margin-bottom:6px;
+  }
+  .final-band .sub{ color:var(--ink-dim); font-size:.9rem; margin-bottom:22px; }
+  .final-grid{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:12px;
+  }
+  .final-item{
+    background:rgba(14,16,18,.55);
+    border:1px solid rgba(179,39,44,.3);
+    border-radius:8px;
+    padding:16px 18px;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .final-item .txt{ color:var(--ink); font-size:.95rem; font-weight:500; }
+  .final-item .chip{ align-self:flex-start; }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:34px 6vw 50px;
+    text-align:center;
+    color:var(--ink-dim);
+    font-size:.85rem;
+  }
+  footer .server-name{ color:var(--gold); font-family:'Almarai',sans-serif; font-weight:700; }
+
+  @media(max-width:640px){
+    .header-inner{ flex-direction:column; text-align:center; align-items:center;}
+    .bism{ text-align:center; }
+    .section-head{ flex-direction:column; gap:8px; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="watermark"></div>
+  <div class="header-inner">
+    <div class="seal">
+      <div class="seal-text">SC<small>OFFICIAL</small></div>
+    </div>
+    <div class="header-copy">
+      <div class="eyebrow">قرار إداري معتمد · سيرفر Silent City</div>
+      <h1>اللائحة الرسمية لقوانين العصابات</h1>
+      <p>مرجع موحّد لجميع الأنظمة الخاصة بالعصابات، العداوات، الحياة الواقعية، وقصر المافيا. الالتزام واجب على الجميع دون استثناء.</p>
+    </div>
+  </div>
+  <div class="bism">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيم — جميع القوانين أدناه سارية المفعول فور نشرها، ويُعتبر الجهل بها غير مُعفٍ من المسؤولية.</div>
+</header>
+
+<nav>
+  <a href="#urgent">قرار عاجل</a>
+  <a href="#discord">الدسكورد</a>
+  <a href="#enmity">العداوة</a>
+  <a href="#basics">القوانين الأساسية</a>
+  <a href="#irl">الحياة الواقعية</a>
+  <a href="#castle">القصر</a>
+  <a href="#final">مخالفات الباند الفوري</a>
+</nav>
+
+<main>
+
+  <!-- URGENT MILITARY KIDNAP LAW -->
+  <section class="section" id="urgent">
+    <div class="section-head">
+      <span class="tag">01</span>
+      <h2>قانون جديد وهام — يُعمل به فورًا</h2>
+    </div>
+
+    <div class="alert">
+      <h3>⚠ يُمنع منعًا باتًا خطف أي عسكري في الحالات التالية</h3>
+      <ul>
+        <li>الخطف داخل منطقة آمنة أو ضمن حدودها <span class="chip ban">تجاوز خطير</span></li>
+        <li>الخطف بدون سبب مقنع وواضح <span class="chip ban">تجاوز خطير</span></li>
+        <li>الخطف العشوائي أو بغرض الاستفزاز فقط <span class="chip ban">تجاوز خطير</span></li>
+        <li>تكرار حالات الخطف خلال فترات زمنية قصيرة <span class="chip ban">تجاوز خطير</span></li>
+        <li>الخطف بقصد التشهير أو الإهانة أو المساومة غير المنطقية <span class="chip ban">تجاوز خطير</span></li>
+      </ul>
+      <p style="margin-top:14px;">📌 أي مخالفة لما ذُكر أعلاه تُعتبر تجاوزًا خطيرًا، ويُسمح للعساكر بالتعامل الفوري والحازم دون أي تهاون.</p>
+    </div>
+
+    <div class="rule-card warn">
+      <div class="rule-text">
+        <strong>تنويه إلى جميع بوسات العصابات:</strong> لا تكثروا من حالات الخطف، واحرصوا على سلامة أنفسكم. التمادي في الخطف سيؤدي إلى تعميم أمني شامل عليكم، وتصعيد مباشر من قبل القوات العسكرية. نحن لا نمنع اللعب، لكن الفوضى والخطف العشوائي لن يُسمح به بعد اليوم. الالتزام واجب على الجميع دون استثناء، وأي تجاهل لهذا القانون ستكون عواقبه قاسية وحاسمة.
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCORD -->
+  <section class="section" id="discord">
+    <div class="section-head">
+      <span class="tag">02</span>
+      <h2>قانون الدسكورد الرسمي</h2>
+    </div>
+    <div class="rule-card danger">
+      <div class="rule-top">
+        <div class="rule-text">يُمنع منعًا باتًا إنشاء أي دسكورد خارجي، والجميع ملزم بالدسكورد الرسمي المعتمد من الإدارة.</div>
+        <span class="chip ban">إجراء صارم</span>
+      </div>
+    </div>
+    <p class="section-note">أي مخالفة سيتم التعامل معها بإجراء إداري صارم دون تنبيه مسبق.</p>
+  </section>
+
+  <!-- ENMITY / عداوة -->
+  <section class="section" id="enmity">
+    <div class="section-head">
+      <span class="tag">03</span>
+      <h2>قوانين ترسيم العداوة</h2>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">1</span>
+        <div class="rule-text">يجب أن يتم إثبات العداوة بمقطع فيديو.</div>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">2</span>
+        <div class="rule-text">العداوة يجب أن تكون بسبب مقنع، مثل:</div>
+      </div>
+      <div class="subrules">
+        <div>• النصب</div>
+        <div>• التعرّض للخطف</div>
+        <div>• إطلاق النار عليك دون أن يتمكن الطرف الآخر من إسقاطك، أو وجود شاهد يذكر ذلك</div>
+        <div>• التلفّظ عليك <span style="color:var(--ink-dim)">(هذا البند يخص الأفراد، وتكون العداوة بين فرد وآخر)</span></div>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">3</span>
+        <div class="rule-text">العداوة بين العصابات تشمل جميع الأسباب أعلاه وتكون مع العصابة كاملة، ويُضاف إليها: اعتداء أي شخص من عصابة أخرى عليكم داخل حارتكم.</div>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">4</span>
+        <div class="rule-text">تنتهي العداوة بين العصابات في حال قامت بينهم حرب وانتهت بفوز أحد الأطراف.</div>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">5</span>
+        <div class="rule-text">تنتهي العداوة بين الأفراد في حال حصول الصلح بينهما.</div>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">6</span>
+        <div class="rule-text">يُسمح للعصابات بإعدام أي شخص خائن داخل العصابة. في حال انضم لعصابة أخرى، لا يحق لكم إعدامه.</div>
+        <span class="chip gold">إعدام مشروط</span>
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="rule-top">
+        <span class="rule-num">7</span>
+        <div class="rule-text">يُسمح بإعدام شخص بينك وبينه 3 عداوات موثّقة، على أن يكون معك تصوير لكل عداوة على حدة، ويجب أن تكون العداوات لأسباب مقنعة وواضحة أمام الإدارة العليا (المافيا).</div>
+        <span class="chip gold">إعدام مشروط</span>
+      </div>
+    </div>
+
+    <div class="alert" style="margin-top:22px;">
+      <h3>📌 تنبيهات مهمة جدًا</h3>
+      <ul>
+        <li>يجب إعلان العداوة بالقول الصريح: «بيننا عداوة»</li>
+        <li>يجب إعلام رئيس العصابة أو النائب بوجود عداوة، ليتولى الرئيس إعلام الطرف الآخر عبر ديسكورد العصابات</li>
+        <li>يُمنع منعًا باتًا إطلاق النار دون تهديد أو حوار أو نقاش، حتى لو مضت أسابيع على العداوة</li>
+        <li>عدم وجود فيديو يُثبت العداوة يجعلها <span class="chip ban">باطلة</span></li>
+        <li>حتى بعد انتهاء العداوة، يجب الاحتفاظ بالفيديو من باب الاحتياط</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BASIC GANG LAWS -->
+  <section class="section" id="basics">
+    <div class="section-head">
+      <span class="tag">أولاً</span>
+      <h2>قوانين العصابات الأساسية</h2>
+    </div>
+
+    <div class="rule-card danger">
+      <div class="rule-top"><span class="rule-num">1</span>
+      <div class="rule-text">يمنع منعًا باتًا تحالف العصابات بأي شكل كان ضد الشرطة أو عصابة أخرى أو مجموعة مواطنين، إلا بإذن من المافيا.</div></div>
+    </div>
+    <div class="rule-card danger">
+      <div class="rule-top"><span class="rule-num">2</span>
+      <div class="rule-text">يمنع الشخصنة بين العصابات أو التقليل أو السب أو الاستهزاء داخل أو خارج الرول.</div>
+      <span class="chip ban">باند نهائي</span></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">3</span>
+      <div class="rule-text">يمنع تقليد لبس عصابة أخرى أو نسب نفسك لعصابة لست عضوًا رسميًا فيها.</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">4</span>
+      <div class="rule-text">عند ترسيم العداوة يجب التوجه للمافيا فورًا؛ لن تُقبل أي شكوى إذا تجاوزت 24 ساعة من وقت الحادثة.</div>
+      <span class="chip warn">مهلة 24 ساعة</span></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">5</span>
+      <div class="rule-text">يجب على أعضاء العصابة التقيد بالزي الرسمي في أي فايت أو عمل إجرامي.</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">6</span>
+      <div class="rule-text">العداوات بين العصابات يجب أن تكون موثّقة بالتصوير.</div></div>
+    </div>
+    <div class="rule-card danger">
+      <div class="rule-top"><span class="rule-num">7</span>
+      <div class="rule-text">إذا وصلت العصابة إلى ثلاث تحذيرات، تُغلق نهائيًا.</div>
+      <span class="chip ban">إغلاق نهائي</span></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">8</span>
+      <div class="rule-text">يمنع مداهمة مقرات العصابات والتلويث، إلا بعد ترسيم العداوة من المافيا.</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">9</span>
+      <div class="rule-text">يمنع على العصابات تنفيذ الإعدام إلا بإذن من رتبة عليا في المافيا.</div></div>
+    </div>
+    <div class="rule-card warn">
+      <div class="rule-top"><span class="rule-num">10</span>
+      <div class="rule-text">يمنع الفايتات بين العصابات لفترة مؤقتة، حسب إعلان الإدارة.</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-top"><span class="rule-num">11</span>
+      <div class="rule-text">يمنع إهانة الجثة بأي شكل من الأشكال.</div></div>
+    </div>
+  </section>
+
+  <!-- IRL / ROLEPLAY -->
+  <section class="section" id="irl">
+    <div class="section-head">
+      <span class="tag">ثانيًا</span>
+      <h2>قوانين الحياة الواقعية (Roleplay Rules)</h2>
+    </div>
+    <p class="section-note">يجب فهم معنى الحياة الواقعية سواء كنت مجرمًا أو رهينة.</p>
+
+    <ul class="plain-list">
+      <li>يمنع الاتفاق مع أي شخص ليصبح رهينة.</li>
+      <li>عند خطف رهينة: لديك <strong style="color:var(--gold)">20 دقيقة فقط</strong> لبدء السيناريو، وبعدها يجب الإفراج عنه.</li>
+      <li>يمنع المتاجرة بالممنوعات أو النصب في المناطق الآمنة.</li>
+      <li>الحد الأدنى لأعضاء العصابة: <strong style="color:var(--gold)">7 أعضاء</strong>.</li>
+      <li>يمنع خطف رهينة بهدف التوجه للسجن للتفاوض على إطلاق سجين.</li>
+      <li>يمنع الاعتداء على مفاوض الشرطة أو مفاوض المجرمين.</li>
+      <li>يمنع مقاومة السلاح الناري بسلاح أبيض، أو مقاومة سلاح ثقيل بسلاح خفيف.</li>
+      <li>يمنع إطلاق النار أو خطف العسكري في قضية مرورية.</li>
+      <li>يمنع مشاركة الرهينة للخاطفين في أي جزء من السيناريو.</li>
+      <li>يمنع الخطف والتهديد بوجود مواطنين كُثر (شهود).</li>
+      <li>يمنع خطف أو الاعتداء على أصحاب الوظائف: التاكسي، المحامي، المسعف.</li>
+      <li>يمنع السرقة ثم الانتظار في نفس الموقع.</li>
+      <li>يمنع استخدام الإيموتات غير الواقعية (مثل السلايد أو الباركور).</li>
+      <li>يمنع تبادل إطلاق النار داخل الهيومن لاب أو المترو.</li>
+      <li>الحد الأقصى للفدية: <strong style="color:var(--gold)">1500$</strong> لكل رهينة، ويكون التسليم يدًا بيد.</li>
+      <li>في حال سقوطك: يمنع تحديث الحالة أو إعطاء كول أوت.</li>
+      <li>يجب التخطيط للسرقة قبل البدء بها.</li>
+      <li>يمنع افتعال فايت دون سبب.</li>
+      <li>الحد الأعلى للرهائن في أي سرقة: <strong style="color:var(--gold)">7 رهائن</strong> فقط.</li>
+      <li>يمنع الاعتداء على المسعفين.</li>
+      <li>الحد الأعلى لأعضاء العصابة الواحدة: <strong style="color:var(--gold)">15 عضوًا</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- CASTLE -->
+  <section class="section" id="castle">
+    <div class="section-head">
+      <span class="tag">ثالثًا</span>
+      <h2>قوانين القصر (Castle Rules)</h2>
+    </div>
+
+    <ul class="plain-list">
+      <li>يمنع الانقلاب على المافيا منعًا باتًا لأي سبب.</li>
+      <li>يمنع رفع الجوال داخل القصر.</li>
+      <li>يمنع لبس الماسك داخل القصر.</li>
+      <li>الالتزام بالزي الرسمي للعصابة أثناء الدخول للقصر.</li>
+      <li>يمنع أي اقتتال داخل القصر.</li>
+      <li>احترام المافيا احترامًا كاملًا داخل وخارج الرول.</li>
+      <li>يمنع التحدث في الاجتماعات إلا بإذن.</li>
+    </ul>
+
+    <div class="alert" style="margin-top:20px;">
+      <h3>عقوبات مخالفة قوانين القصر</h3>
+      <ul>
+        <li>بلاك ليست للعصابة <span class="chip ban">بلاك ليست</span></li>
+        <li>محاسبة العصابة كاملة + حرمان من الفعاليات <span class="chip warn">حرمان</span></li>
+      </ul>
+    </div>
+
+    <div class="section-head" style="margin-top:36px;">
+      <span class="tag">رابعًا</span>
+      <h2>قوانين دخول القصر لأعضاء العصابات</h2>
+    </div>
+    <ul class="plain-list">
+      <li>ممنوع دخول القصر لأي شخص غير الليدر أو الكوليدر.</li>
+      <li>عند دخول القصر يجب لبس زي العصابة فقط.</li>
+      <li>عند طلب التوجه للقصر، يجب الذهاب فورًا.</li>
+      <li>يمنع ظهور الأسلحة داخل القصر.</li>
+      <li>يمنع دخول أي مسؤول عصابة للقصر بدون استدعاء.</li>
+    </ul>
+  </section>
+
+  <!-- FINAL INSTANT BAN LIST -->
+  <section class="section" id="final">
+    <div class="final-band">
+      <h2>🚨 تنبيه إداري هام — سيرفر Silent City</h2>
+      <p class="sub">حرصًا على جودة الرول بلاي وراحة جميع اللاعبين، تم اعتماد المخالفات التالية التي يُعاقب عليها بالباند النهائي دون استثناء:</p>
+      <div class="final-grid">
+        <div class="final-item"><span class="txt">أي حالة تلفيت</span><span class="chip ban">باند نهائي</span></div>
+        <div class="final-item"><span class="txt">أي حالة تصديم متعمد</span><span class="chip ban">باند نهائي</span></div>
+        <div class="final-item"><span class="txt">أي تفشيل تفاوض</span><span class="chip ban">باند نهائي</span></div>
+        <div class="final-item"><span class="txt">أي شكل من أشكال التخريب</span><span class="chip ban">باند نهائي</span></div>
+        <div class="final-item"><span class="txt">إطلاق نار داخل المناطق الآمنة</span><span class="chip ban">باند نهائي</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><span class="server-name">Silent City</span> — الإدارة العليا</p>
+  <p style="margin-top:6px;">هذه اللائحة سارية المفعول فور نشرها ويُطبَّق مضمونها بحذافيره على جميع أعضاء العصابات دون استثناء.</p>
+</footer>
+
+</body>
+</html>
